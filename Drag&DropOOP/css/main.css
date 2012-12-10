@@ -1,0 +1,81 @@
+html, body, form, fieldset, div{
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+
+.box { 
+	width:700px;
+	height:500px;  
+	position:absolute; 
+	left:50%;
+	top:50%; 
+	margin-left:-350px; 
+	margin-top:-250px; 
+	border:1px solid blue;
+ }
+ 
+.box div {
+    cursor: move;
+	position: absolute;
+	z-index: 0;
+	background-color: #CCC;		
+	border: 1px solid green;
+	color: red;
+}
+
+.box div div#l-t {
+	left:0;
+    top:0;
+	cursor: se-resize;
+	position: absolute;
+	background-color: black;
+	width:5px;
+	height:5px;  
+	border: none;
+}
+
+.box div div#l-b {
+	left:0;
+    bottom:0;
+	cursor: ne-resize;
+	position: absolute;
+	background-color: black;
+	width:5px;
+	height:5px;  
+	border: none;
+}
+
+.box div div#r-t {
+	right:0;
+    top:0;
+	cursor:ne-resize;
+	position: absolute;
+	background-color: black;
+	width:5px;
+	height:5px;  
+	border: none;
+}
+
+.box div div#r-b {
+	right:0;
+    bottom:0;
+	cursor: se-resize;
+	position: absolute;
+	background-color: black;
+	width:5px;
+	height:5px;  
+	border: none;
+}
+
+
+
+#but{
+   cursor:pointer;
+}
+
